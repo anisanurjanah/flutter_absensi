@@ -15,6 +15,8 @@ class AddPermissionBloc extends Bloc<AddPermissionEvent, AddPermissionState> {
   ) : super(const _Initial()) {
     on<_AddPermission>((event, emit) async {
       print("EVENT BLOC TERPANGGIL...");
+      print("Isi event: type=${event.type}, date=${event.date}, reason=${event.reason}, image=${event.image?.path}");
+
       emit(const _Loading());
       final result =
           await datasource.addPermission(event.type, event.date, event.reason, event.image);

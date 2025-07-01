@@ -540,10 +540,29 @@ class _HomePageState extends State<HomePage> {
                       iconPath: Assets.icons.menu.izin.path,
                       onPressed: () {
                         // context.push(const PermissionPage());
-                        Navigator.of(context).push(
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (_) => BlocProvider.value(
+                        //       value: context.read<AddPermissionBloc>(),
+                        //       child: const PermissionPage(),
+                        //     ),
+                        //   ),
+                        // );
+                        // Navigator.of(context).push(
+                        //   MaterialPageRoute(
+                        //     builder: (_) => BlocProvider.value(
+                        //       value: context.read<AddPermissionBloc>(),
+                        //       child: const PermissionPage(),
+                        //     ),
+                        //   ),
+                        // );
+                        final bloc = context.read<AddPermissionBloc>();
+                        Navigator.push(
+                          context,
                           MaterialPageRoute(
                             builder: (_) => BlocProvider.value(
-                              value: context.read<AddPermissionBloc>(),
+                              value: bloc,
                               child: const PermissionPage(),
                             ),
                           ),

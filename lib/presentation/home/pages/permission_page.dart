@@ -58,7 +58,12 @@ class _PermissionPageState extends State<PermissionPage> {
 
   @override
   Widget build(BuildContext context) {
-    print("PERMISSION PAGE DIBUKA");
+    try {
+      final bloc = context.read<AddPermissionBloc>();
+      print("AddPermissionBloc ditemukan: $bloc");
+    } catch (e) {
+      print("ERROR: Bloc tidak ditemukan: $e");
+    }
 
     return Scaffold(
       appBar: AppBar(

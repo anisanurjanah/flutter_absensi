@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/bahri/software/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/bahri/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/bahri/development/project/SELL/flutter_absensi_app-dev/android/app/.cxx/Debug/412u6oq1/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/bahri/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/bahri/development/project/SELL/flutter_absensi_app-dev/android/app/.cxx/Debug/412u6oq1/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
